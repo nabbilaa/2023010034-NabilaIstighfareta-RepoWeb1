@@ -1,76 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Detail Mahasiswa - Susi Rohmawati</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Mahasiswa</title>
+    <link rel="stylesheet" href="CSS/style.css">
     <style>
+        /* Gaya khusus untuk halaman Detail Mahasiswa */
+        .content {
+            padding: 20px;
+        }
         table {
-            width: 100%; /* Mengatur lebar tabel */
-            border-collapse: collapse; /* Menggabungkan border untuk tampilan yang lebih bersih */
-            margin: 20px 0; /* Menambahkan margin di sekitar tabel */
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
         }
         th, td {
-            border: 1px solid #ddd; /* Menambahkan border pada sel tabel */
-            padding: 8px; /* Menambahkan padding untuk ruang yang lebih baik */
-            text-align: left; /* Mengatur teks ke kiri */
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
         }
         th {
-            background-color: #f2f2f2; /* Warna latar belakang untuk header */
+            background-color: #f2f2f2;
         }
         h2 {
-            text-align: center; /* Mengatur judul di tengah */
+            text-align: center;
+            margin-bottom: 20px;
         }
         img {
-            display: block; /* Menjadikan gambar sebagai elemen blok */
-            margin: 0 auto; /* Mengatur margin untuk pusat */
-            width: 200px; /* Mengatur lebar gambar */
+            display: block;
+            margin: 0 auto;
+            width: 200px;
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="Image/LOGO_POLIBANG.png" alt="Logo Polibang">
+            <h1>Politeknik Balekambang Jepara</h1>
+            <p>Rekayasa  Perangkat Lunak</p>
+        </div>
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="karir.html">Karir</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>Detail Mahasiswa</h2>
-    <img src="Image/susi.jpg" alt="Susi Rohmawati" width="200">
-    <table>
-        <tr>
-            <th>Informasi</th>
-            <th>Detail</th>
-        </tr>
-        <tr>
-            <td><strong>Nama</strong></td>
-            <td>Susi Rohmawati</td>
-        </tr>
-        <tr>
-            <td><strong>Alamat</strong></td>
-            <td>Gembong, Pati</td>
-        </tr>
-        <tr>
-            <td><strong>Email</strong></td>
-            <td>susserhmtw@gmail.com</td>
-        </tr>
-        <tr>
-            <td><strong>Deskripsi</strong></td>
-            <td>Mahasiswa semester 3 yang aktif dan memiliki ketertarikan dalam pengembangan perangkat lunak.</td>
-        </tr>
-        <tr>
-            <td><strong>Hobi</strong></td>
-            <td>
-                <ul>
-                    <li>Menonton drama</li>
-                    <li>Membaca</li>
-                    <li>Memasak</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Keahlian</strong></td>
-            <td>
-                <ul>
-                    <li>Desain UI/UX</li>
-                    <li>Microsoft Office</li>
-                    <li>Analisis Data</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+    <!-- Main Body -->
+    <div class="main-body">
+        <!-- Detail Mahasiswa Section -->
+        <section class="content">
+            <h2>Detail Mahasiswa </h2>
+            <img src="Image/susi.jpg" alt="Susi Rohmawati">
+            <table>
+                <tr>
+                    <th>Informasi</th>
+                    <th>Detail</th>
+                </tr>
+                <tr>
+                    <td><strong>Nama</strong></td>
+                    <td>Susi Rohmawati</td>
+                </tr>
+                <tr>
+                    <td><strong>Alamat</strong></td>
+                    <td>Gembong, Pati</td>
+                </tr>
+                <tr>
+                    <td><strong>Email</strong></td>
+                    <td>susserhmtw@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><strong>Deskripsi</strong></td>
+                    <td>Mahasiswa semester 3 yang aktif dan memiliki ketertarikan dalam pengembangan perangkat lunak.</td>
+                </tr>
+                <tr>
+                    <td><strong>Hobi</strong></td>
+                    <td>
+                        <ul>
+                            <li>Menonton drama</li>
+                            <li>Membaca</li>
+                            <li>Memasak</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Keahlian</strong></td>
+                    <td>
+                        <ul>
+                            <li>Desain UI/UX</li>
+                            <li>Microsoft Office</li>
+                            <li>Analisis Data</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <small>&copy; 2024 - Nabila Istighfareta, Politeknik Balekambang Jepara</small>
+    </footer>
 </body>
 </html>
