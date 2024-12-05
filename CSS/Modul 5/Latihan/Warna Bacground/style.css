@@ -1,0 +1,13 @@
+.blue-background {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.orange-background {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
