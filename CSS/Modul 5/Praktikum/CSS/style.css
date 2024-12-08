@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,10 +11,9 @@ body {
 
 /* Header */
 .header {
-    background-color: #52d0c4;
+    background-color: #800000;
     text-align: center;
     padding: 20px 0;
-    border-radius: 0 0 10px 10px;
 }
 
 .header h1 {
@@ -30,10 +28,15 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #013574;
+    background-color: #982B1C;
     padding: 10px 0;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Agar navbar tetap di atas elemen lain */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek */
 }
+
 
 .navbar ul {
     list-style: none;
@@ -60,10 +63,15 @@ body {
     margin: 20px;
 }
 
+.content-galeri {
+    flex: 1; /* Membuat bagian ini fleksibel */
+    padding: 20px;
+}
+
 /* Sidebar */
 .sidebar {
     width: 25%;
-    background-color: #ffffff;
+    background-color: #FFF5E1;
     border: 1px solid #ccc;
     padding: 20px;
     margin-right: 20px;
@@ -102,7 +110,7 @@ body {
 /* Main Content */
 .main {
     width: 75%;
-    background-color: #ffffff;
+    background-color: #FFF5E1;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 8px;
@@ -144,10 +152,67 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #013574;
+    background-color: #800000;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 10px;
     color: white;
-    font-size: 14px;
-    margin-top: 20px;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
+
+/* Galeri */
+.gallery2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-item {
+    width: calc(33.33% - 16px); /* Ukuran item fleksibel */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px; /* Tinggi tetap */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+
+.gallery-item figcaption {
+    font-size: 14px;
+    color: #555;
+    padding: 8px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 16px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: calc(100% - 16px);
+    }
+}
+
+
